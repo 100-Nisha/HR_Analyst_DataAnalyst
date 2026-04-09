@@ -33,6 +33,9 @@ The dataset contains:
 ## 📊 Key Metrics (DAX Measures)
 
 ### 🔢 Total Working Days
+
+```
+
 DAX
 Total Working Days =
 VAR totaldays = COUNT('Final Data'[Value])
@@ -44,9 +47,13 @@ VAR nonworkdays =
 RETURN
     totaldays - nonworkdays
 
+```
+
 ---
 
 ### 🟢 Present Days
+
+```
 
 Present Days =
 VAR presentdays =
@@ -57,21 +64,33 @@ VAR presentdays =
 RETURN
     presentdays + [WFH Count]
 
+```
+
 ---
 
 ### 🏠 WFH Count
 
+```
+
 WFH Count = SUM('Final Data'[WFH Count])
+
+```
 
 ---
 
 ### 🤒 Sick Leave Count
 
+```
+
 SL Count = SUM('Final Data'[SL Count])
+
+```
 
 ---
 
 ### 📊 Presence %
+
+```
 
 Presence % = 
 DIVIDE(
@@ -79,9 +98,13 @@ DIVIDE(
     [Total Working Days]
 ) * 100
 
+```
+
 ---
 
 ### 🏠 WFH %
+
+```
 
 WFH % = 
 DIVIDE(
@@ -89,9 +112,13 @@ DIVIDE(
     [Total Working Days]
 ) * 100
 
+```
+
 ---
 
 ### 🤒 Sick Leave %
+
+```
 
 Sick Leave % = 
 DIVIDE(
@@ -99,9 +126,12 @@ DIVIDE(
     [Total Working Days]
 ) * 100
 
+```
+
 ---
 
 ### 📊 Attendance %
+```
 
 Attendance % =
 DIVIDE(
@@ -109,6 +139,8 @@ DIVIDE(
     [Total Working Days],
     0
 )
+
+```
 
 ---
 
