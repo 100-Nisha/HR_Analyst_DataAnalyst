@@ -44,6 +44,8 @@ VAR nonworkdays =
 RETURN
     totaldays - nonworkdays
 
+---
+
 ### 🟢 Present Days
 
 Present Days =
@@ -55,13 +57,19 @@ VAR presentdays =
 RETURN
     presentdays + [WFH Count]
 
+---
+
 ### 🏠 WFH Count
 
 WFH Count = SUM('Final Data'[WFH Count])
 
+---
+
 ### 🤒 Sick Leave Count
 
 SL Count = SUM('Final Data'[SL Count])
+
+---
 
 ### 📊 Presence %
 
@@ -71,6 +79,8 @@ DIVIDE(
     [Total Working Days]
 ) * 100
 
+---
+
 ### 🏠 WFH %
 
 WFH % = 
@@ -79,6 +89,8 @@ DIVIDE(
     [Total Working Days]
 ) * 100
 
+---
+
 ### 🤒 Sick Leave %
 
 Sick Leave % = 
@@ -86,6 +98,8 @@ DIVIDE(
     [Total Sick Leave Days],
     [Total Working Days]
 ) * 100
+
+---
 
 ### 📊 Attendance %
 
@@ -96,6 +110,8 @@ DIVIDE(
     0
 )
 
+---
+
 ## 📈 Dashboard Features
 - 📅 Attendance trend over time: ~91%
 - 🏠 Work From Home (WFH) analysis: ~10%
@@ -105,4 +121,4 @@ DIVIDE(
 
 📷 Dashboard Preview
 
-
+![Image_ALT]()
