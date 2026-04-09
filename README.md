@@ -121,4 +121,4 @@ DIVIDE(
 
 📷 Dashboard Preview
 
-![Image_ALT]()
+![Image_ALT](https://github.com/100-Nisha/HR_Analyst_DataAnalyst/blob/main/HR_Analyst.png?raw=true)
